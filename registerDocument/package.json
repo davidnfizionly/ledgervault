@@ -1,0 +1,24 @@
+{
+  "name": "register-document",
+  "version": "1.0.0",
+  "description": "Lambda function to register document hash on blockchain (simulation)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.1",
+    "ethers": "^6.14.4",
+    "node-fetch": "^2.6.7",
+    "web3": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

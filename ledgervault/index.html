@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LedgerVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">LedgerVault</h1>
+      <span>Connected to <strong>Ethereum Testnet</strong></span>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Document Integrity Verification</h2>
+      <p>Securely register and verify your documents with blockchain technology</p>
+
+      <div class="form-container">
+        <!-- Upload / Register Section -->
+        <div class="card">
+          <h3>Upload Document</h3>
+          <input type="file" id="registerFile" />
+          <textarea id="documentDescription" placeholder="Document Description"></textarea>
+          <button id="registerButton">Register on Blockchain</button>
+          <p id="registerStatus" class="status-message"></p>
+        </div>
+
+        <!-- Verify Section -->
+        <div class="card">
+          <h3>Verify Document</h3>
+          <input type="file" id="verifyFile" />
+          <button id="verifyButton">Verify Document</button>
+          <p id="verifyStatus" class="status-message"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Document History (static for now) -->
+    <section>
+      <h3>Document History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Hash</th>
+            <th>Timestamp</th>
+            <th>Status</th>
+            <th>Transaction</th>
+          </tr>
+        </thead>
+        <tbody id="historyTableBody">
+          <!-- Entries will be populated dynamically if needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 LedgerVault. All rights reserved. 
+      <a href="https://github.com/davidnfizionly">GitHub</a> | 
+      <a href="#">Documentation</a>
+    </p>
+  </footer>
+
+  <!-- Link to your JS logic -->
+  <script src="script.js"></script>
+</body>
+</html>
